@@ -3,7 +3,8 @@ from telebot import types
 import datetime
 from googletrans import Translator
 
-bot = telebot.TeleBot('5116797216:AAHgRkyxPXwYWy75uNCAo3626-YaokDNUEE')
+token = open('token.txt', 'r').read()
+bot = telebot.TeleBot(token)
 
 # struct - data; price; type; product;
 data = []
