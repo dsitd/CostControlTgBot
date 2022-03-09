@@ -2,8 +2,9 @@ import telebot
 from telebot import types
 import datetime
 from googletrans import Translator
+import os
 
-token = open('token.txt', 'r').read()
+token = os.getenv("TOKEN")
 bot = telebot.TeleBot(token)
 
 # struct - nickname; data; price; type; product;
