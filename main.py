@@ -6,6 +6,7 @@ import os
 
 token = os.getenv("TOKEN")
 bot = telebot.TeleBot(token)
+print(token)
 
 # struct - nickname; data; price; type; product;
 data = []
