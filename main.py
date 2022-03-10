@@ -4,7 +4,7 @@ import datetime
 from googletrans import Translator
 import os
 
-token = os.getenv("TOKEN")
+token = os.environ.get("TOKEN")
 bot = telebot.TeleBot(token)
 print(token)
 
