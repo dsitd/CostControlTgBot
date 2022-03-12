@@ -5,7 +5,7 @@ from googletrans import Translator
 import os
 
 token = os.environ.get("TOKEN")
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot('noone')
 print(token)
 
 # struct - nickname; data; price; type; product;
